@@ -17,10 +17,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a:hover{color:var(--blue)}
 .nav-cta{background:var(--blue)!important;color:#fff!important;padding:0.55rem 1.4rem!important;border-radius:2px}
 .nav-cta:hover{background:var(--blue-dark)!important}
-.hero{min-height:100vh;background:linear-gradient(to bottom, #fff 0%, #fff 38%, var(--blue) 38%, var(--blue) 100%);display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 3rem 5rem}
-.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,37,223,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,37,223,0.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero{min-height:100vh;background:var(--blue);display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 3rem 5rem}
+.hero-white-top{position:absolute;top:0;left:0;right:0;height:220px;background:#fff;z-index:0}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,37,223,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,37,223,0.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:1}
 .hero-red-stripe{position:absolute;bottom:0;left:0;right:0;height:5px;background:var(--red)}
-.hero-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;max-width:1200px;margin:0 auto;width:100%;align-items:center;position:relative}
+.hero-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;max-width:1200px;margin:0 auto;width:100%;align-items:start;position:relative;z-index:2;padding-top:2rem}
 .eyebrow{font-family:'Roboto Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-mid);margin-bottom:1.25rem;display:flex;align-items:center;gap:0.75rem}
 .eyebrow span{display:inline-block;width:2rem;height:2px;background:var(--red)}
 .hero h1{font-family:'Roboto Condensed',sans-serif;font-size:clamp(3rem,5.5vw,5rem);line-height:1.0;color:var(--black);font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;margin-bottom:1.5rem}
@@ -136,10 +137,11 @@ footer{background:var(--blue-dark);padding:2rem 3rem;display:flex;align-items:ce
 </nav>
 
 <section class="hero" id="home">
+  <div class="hero-white-top"></div>
   <div class="hero-grid-bg"></div>
   <div class="hero-red-stripe"></div>
   <div class="hero-inner">
-    <div>
+    <div style="background:#fff;padding:2.5rem 2rem 2.5rem 0;border-radius:2px;">
       <div class="eyebrow"><span></span>Women's Entrepreneurship Day · November 2026</div>
       <h1>Work Smarter.<br><span class="red">Scale Faster.</span></h1>
       <p class="hero-sub">The WEDO Canada Summit teaches women entrepreneurs how to use AI, automation, and the right tools to save time, grow revenue, and build with confidence — no tech background required.</p>
