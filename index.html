@@ -6,6 +6,17 @@
 <title>WEDO Canada Summits 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
+/* WordPress full-width breakout */
+body { margin: 0 !important; padding: 0 !important; }
+.hero, .pillars, .cities, .why, .social, .sponsors, .fcta {
+  width: 100vw !important;
+  position: relative !important;
+  left: 50% !important;
+  right: 50% !important;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+}
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--blue:#0025DF;--blue-dark:#001AA8;--blue-light:#E8ECFD;--red:#DD3333;--black:#000;--white:#FFF;--off-white:#F5F6FA;--gray:#EBEBEB;--text-mid:#444;--text-muted:#888;--border:rgba(0,37,223,0.15)}
 html{scroll-behavior:smooth}
@@ -82,10 +93,10 @@ section{padding:6rem 3rem}
 .wi-icon svg{width:18px;height:18px}
 .wi-title{font-family:'Roboto Condensed',sans-serif;font-weight:700;font-size:1rem;color:var(--black);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.35rem}
 .wi-text{font-size:0.875rem;color:var(--text-mid);line-height:1.7;font-weight:300}
-.why-aside{background:rgba(0,37,223,0.75);border-radius:2px;padding:2.75rem;position:sticky;top:6rem;border-top:4px solid var(--red)}
-.wa-label{font-family:'Roboto Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:1rem}
+.why-aside{background:rgba(0,37,223,1);border-radius:2px;padding:2.75rem;position:sticky;top:6rem;border-top:4px solid var(--red)}
+.wa-label{font-family:'Roboto Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:1rem}
 .why-aside h3{font-family:'Roboto Condensed',sans-serif;font-size:1.6rem;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:1rem;line-height:1.2;letter-spacing:0.02em}
-.why-aside p{font-size:0.875rem;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:2rem;font-weight:300}
+.why-aside p{font-size:0.875rem;color:rgba(255,255,255,0.9);line-height:1.75;margin-bottom:2rem;font-weight:300}
 .why-aside .btn-red{width:100%;text-align:center}
 .social{background:#fff}
 .social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
@@ -243,19 +254,22 @@ section{padding:6rem 3rem}
 <section class="social" id="stories">
   <div class="container">
     <div class="split-header">
-      <div><div class="s-eyebrow">Hear their stories</div><h2 class="s-title">Women who've <span class="red">been there</span></h2></div>
-      <p class="s-sub">Summits from coast to coast. Women leaving with clarity, tools, and connections they still use.</p>
+      <div><div class="s-eyebrow">In Her Words</div><h2 class="s-title">The Impact of <span class="red">Investing in Women</span></h2></div>
+      
     </div>
-    <div class="social-grid">
-      <div class="t-card"><div class="t-mark">"</div><p class="t-text">I implemented two new automations the week after the summit. Hours back every month. Worth every minute.</p><div class="t-author">Sarah M.</div><div class="t-role">Founder · Calgary</div></div>
-      <div class="t-card"><div class="t-mark">"</div><p class="t-text">Finally — a tech event that didn't make me feel like I needed a CS degree. Real tools, real language, real results.</p><div class="t-author">Diane T.</div><div class="t-role">Business Owner · Vancouver</div></div>
-      <div class="t-card"><div class="t-mark">"</div><p class="t-text">The network I built at WEDO has opened more doors than anything else I've done for my business this year.</p><div class="t-author">Priya K.</div><div class="t-role">Entrepreneur · Toronto</div></div>
+    <div class="t-card" style="max-width:860px;margin:0 auto;">
+      <p class="t-text" style="font-size:1.05rem;line-height:1.85;">Receiving this scholarship is incredibly impactful for me. The funds will be directed for tuition and supplies, which will alleviate some of the financial burden from pursuing a full-time MBA program. This support means I can focus more on my studies and my business, which allows me to dedicate time to develop new ideas and initiatives without the stress of financial constraints. Thank you again for selecting me to receive this scholarship. With your support, I'm excited to continue my journey as an entrepreneur and contribute positively to my community and beyond.</p>
+      <div class="t-author">Anetha Kanagavaratha</div>
+      <div class="t-role">MBA Student at Ivey Business School</div>
     </div>
+    </div>
+                </div>
     </div>
   </div>
 </section>
 
 
+<!-- SPONSORS SECTION - uncomment when confirmed
 <section class="sponsors" id="sponsors">
   <div class="container">
     <div class="s-eyebrow">Our sponsors</div>
@@ -271,6 +285,7 @@ section{padding:6rem 3rem}
     </div>
   </div>
 </section>
+-->
 
 <div class="fcta">
   <h2>Your next level is<br><span class="red">one summit away.</span></h2>
